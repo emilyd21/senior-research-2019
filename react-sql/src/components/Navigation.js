@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from 'react-router-dom'; 
 import './components.css';
 
 
@@ -10,6 +9,9 @@ const Navigation = () => {
     <a class="nav-link" href="/">Home</a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="/login">Login</a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" href="/profile">Profile</a>
   </li>
   <li class="nav-item">
@@ -18,6 +20,7 @@ const Navigation = () => {
   <li class="nav-item">
     <a class="nav-link" href="/stats">Stats</a>
   </li>
+
 </ul>
   );
 };

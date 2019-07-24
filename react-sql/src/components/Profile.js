@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import {render} from "react-dom";
-
 import './components.css';
 
 class Profile extends Component {
@@ -19,7 +17,7 @@ class Profile extends Component {
     .catch(err => console.log(err))
   }
 
-renderUser = ({user_id, name, email}) => <div key={user_id}> UserID: {user_id} <br></br>Name: {name} <br></br> Email: {email}.</div>
+renderUser = ({userID, name, email}) => <div key={userID}> ID: {userID} <br></br>Name: {name} <br></br>Email: {email} <hr></hr></div>
 
 render () {
     const { users, user } = this.state;
@@ -30,7 +28,7 @@ render () {
     <hr></hr>
 </div>
 <div className="body">
-    <p>Thanks so much for playing and helping collegiate athletes get a larger fan-base! :)</p> <br></br><hr></hr>
+    <h4>Current Users:</h4><hr></hr>
     <p3>{users.map(this.renderUser)} </p3> 
 </div>
 </div>

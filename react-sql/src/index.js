@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Profile from "./components/Profile";
 import Team from "./components/Team";
 import Stats from "./components/Stats";
+import Login from "./components/Login";
 import Navigation from "./components/Navigation";
 
 
@@ -21,6 +22,7 @@ render () {
             <Route path="/profile" component={Profile} />
             <Route path="/team" component={Team} />
             <Route path="/stats" component={Stats} />
+            <Route path="/login" component={Login} />
           </Switch>
       </Router>
     );

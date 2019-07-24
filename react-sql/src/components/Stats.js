@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import {render} from "react-dom";
-
 import './components.css';
 
 class Stats extends Component {
@@ -30,7 +28,7 @@ render () {
             <hr></hr>
         </div>
         <div className="col">
-            <h4>Player statistics: </h4> <br></br>
+            <h4>Individual statistics: </h4> <hr></hr>
              <div className="col">
                  <p4>{players.map(this.renderPlayer)} <hr></hr>
                  </p4>
